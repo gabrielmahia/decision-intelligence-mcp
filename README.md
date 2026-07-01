@@ -2,6 +2,12 @@
 
 **5,000 years of military strategy, philosophy, and decision science — as AI-accessible tools.**
 
+
+
+---
+**Compatible with `claude-sonnet-5`** (released 2026-06-30)
+---
+
 An MCP (Model Context Protocol) server exposing structured public domain knowledge from history's greatest strategic thinkers. Connect to Claude, GPT, or any MCP-compatible AI assistant and access the complete strategic literature of human civilization.
 
 ## Commanders and Thinkers
