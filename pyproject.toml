@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "classical-strategy-mcp"
+name = "decision-intelligence-mcp"
 version = "0.1.0"
 description = "MCP server: 5,000 years of military strategy and philosophy — Napoleon, Sun Tzu, Clausewitz, Alexander, Hannibal, Genghis Khan, Shaka Zulu, Caesar. All public domain."
 readme = "README.md"
@@ -23,12 +23,12 @@ classifiers = [
 dependencies = ["fastmcp>=2.0.0"]
 
 [project.urls]
-Homepage = "https://github.com/gabrielmahia/classical-strategy-mcp"
-Repository = "https://github.com/gabrielmahia/classical-strategy-mcp"
+Homepage = "https://github.com/gabrielmahia/decision-intelligence-mcp"
+Repository = "https://github.com/gabrielmahia/decision-intelligence-mcp"
 "MCP Servers" = "https://glama.ai/mcp/servers?query=author:gabrielmahia"
 
 [project.scripts]
-classical-strategy-mcp = "classical_strategy_mcp.main:main"
+decision-intelligence-mcp = "classical_strategy_mcp.main:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/classical_strategy_mcp"]
