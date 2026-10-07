@@ -2,5 +2,29 @@
   "$schema": "https://glama.ai/mcp/schemas/glama.json",
   "maintainers": [
     "gabrielmahia"
+  ],
+  "version": "0.1.2",
+  "description": "MCP server: 5,000 years of military strategy and philosophy — Napoleon, Sun Tzu, Clausewitz, Alexander, Hannibal, Genghis Khan, Shaka Zulu, Caesar. All public domain.",
+  "tools": [
+    {
+      "name": "napoleon_maxims",
+      "description": "Get Napoleon Bonaparte's Military Maxims — 115 principles distilled from 20+ years of campaign experience. The most concentrated body of military wisdom from any commander in the modern era. Use for strategic planning, logistics, speed of decision, and concentration of force."
+    },
+    {
+      "name": "sun_tzu",
+      "description": "Get Sun Tzu's Art of War — 13 chapters on strategy, intelligence, deception, and the nature of conflict. The oldest continuously studied strategic text. Applies to competitive analysis, negotiation, organizational strategy, and any domain of structured competition."
+    },
+    {
+      "name": "commander_doctrine",
+      "description": "Analyze a commander's signature tactical innovation — the battle doctrine that made them historically decisive. Covers: Napoleon (corps system, central position), Alexander (hammer and anvil), Hannibal (Cannae encirclement), Genghis Khan (feigned retreat + Mongol doctrine), Shaka Zulu (bull-horn formation), Caesar (fortification + speed), Frederick the Great (oblique order)."
+    },
+    {
+      "name": "apply_strategy",
+      "description": "Apply classical military principles to a modern strategic problem. Translates ancient military wisdom into business, technology, organizational, or geopolitical analysis. Specify the problem domain and the analytical lens."
+    },
+    {
+      "name": "public_domain_library",
+      "description": "Get major works of military and strategic philosophy available in the public domain. Returns title, author, date, themes, and key insights for each work."
+    }
   ]
 }
