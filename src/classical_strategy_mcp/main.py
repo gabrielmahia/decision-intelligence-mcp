@@ -29,6 +29,9 @@ from typing import Annotated
 
 from fastmcp import FastMCP
 
+# Annotations tell clients which tools are safe to auto-approve (read-only, no side effects).
+READ_ONLY = {"readOnlyHint": True, "idempotentHint": True, "openWorldHint": False}
+
 mcp = FastMCP(
     name="classical-strategy-mcp",
     instructions=(
@@ -56,7 +59,7 @@ def _load(filename: str) -> dict:
         "20+ years of campaign experience. The most concentrated body of military wisdom "
         "from any commander in the modern era. Use for strategic planning, logistics, "
         "speed of decision, and concentration of force."
-    )
+    ), annotations=READ_ONLY
 )
 def napoleon_maxims(
     category: Annotated[str, "Filter by category: 'strategy'|'tactics'|'logistics'|'leadership'|'intelligence'|'all'"] = "all",
@@ -78,7 +81,7 @@ def napoleon_maxims(
         "and the nature of conflict. The oldest continuously studied strategic text. "
         "Applies to competitive analysis, negotiation, organizational strategy, "
         "and any domain of structured competition."
-    )
+    ), annotations=READ_ONLY
 )
 def sun_tzu(
     chapter: Annotated[int, "Chapter number 1-13. 0 = all chapters."] = 0,
@@ -106,7 +109,7 @@ def sun_tzu(
         "Alexander (hammer and anvil), Hannibal (Cannae encirclement), "
         "Genghis Khan (feigned retreat + Mongol doctrine), Shaka Zulu (bull-horn formation), "
         "Caesar (fortification + speed), Frederick the Great (oblique order)."
-    )
+    ), annotations=READ_ONLY
 )
 def commander_doctrine(
     commander: Annotated[str, "Commander name: napoleon|alexander|hannibal|genghis|shaka|caesar|sun_tzu|clausewitz|frederick"] = "napoleon",
@@ -254,7 +257,7 @@ def commander_doctrine(
         "Apply classical military principles to a modern strategic problem. "
         "Translates ancient military wisdom into business, technology, organizational, "
         "or geopolitical analysis. Specify the problem domain and the analytical lens."
-    )
+    ), annotations=READ_ONLY
 )
 def apply_strategy(
     problem: Annotated[str, "Describe the strategic problem or challenge"],
@@ -330,7 +333,7 @@ def apply_strategy(
     description=(
         "Get major works of military and strategic philosophy available in the public domain. "
         "Returns title, author, date, themes, and key insights for each work."
-    )
+    ), annotations=READ_ONLY
 )
 def public_domain_library(
     domain: Annotated[str, "Domain: 'military'|'philosophy'|'leadership'|'history'|'all'"] = "all",
