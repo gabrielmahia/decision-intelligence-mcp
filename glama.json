@@ -8,23 +8,23 @@
   "tools": [
     {
       "name": "napoleon_maxims",
-      "description": "Get Napoleon Bonaparte's Military Maxims — 115 principles distilled from 20+ years of campaign experience. The most concentrated body of military wisdom from any commander in the modern era. Use for strategic planning, logistics, speed of decision, and concentration of force."
+      "description": "Napoleon's Maxims of War (1831, public domain), by category (strategy, tactics, logistics, leadership, intelligence or all) or by number. Use when someone wants a maxim or a modern reading of one. maxim_number above 0 returns that maxim or an error if it does not exist; otherwise category filters, and an unrecognised category returns an empty list. Returns the commander, source, count and the maxims, each with a modern application. Read-only."
     },
     {
       "name": "sun_tzu",
-      "description": "Get Sun Tzu's Art of War — 13 chapters on strategy, intelligence, deception, and the nature of conflict. The oldest continuously studied strategic text. Applies to competitive analysis, negotiation, organizational strategy, and any domain of structured competition."
+      "description": "Chapters of Sun Tzu's The Art of War (13 chapters, public domain), or a search across verses for a concept such as deception, intelligence or terrain. Use when someone asks what Sun Tzu said about a topic. chapter above 0 returns that chapter or an error if it does not exist; concept searches the verse text for a match. Returns the chapter or the matching verses with chapter and verse numbers. Read-only."
     },
     {
       "name": "commander_doctrine",
-      "description": "Analyze a commander's signature tactical innovation — the battle doctrine that made them historically decisive. Covers: Napoleon (corps system, central position), Alexander (hammer and anvil), Hannibal (Cannae encirclement), Genghis Khan (feigned retreat + Mongol doctrine), Shaka Zulu (bull-horn formation), Caesar (fortification + speed), Frederick the Great (oblique order)."
+      "description": "Doctrine of a historical commander (napoleon, alexander, hannibal, genghis, shaka, caesar, sun_tzu, clausewitz or frederick) with principles and sources. Use when someone asks how a particular commander approached war or leadership. An unknown name returns an error listing the available commanders. Returns the doctrine and its public-domain source. Historical summaries, not operational guidance. Read-only."
     },
     {
       "name": "apply_strategy",
-      "description": "Apply classical military principles to a modern strategic problem. Translates ancient military wisdom into business, technology, organizational, or geopolitical analysis. Specify the problem domain and the analytical lens."
+      "description": "Apply a strategic lens (competition, leadership, intelligence, resources, operations or psychology) to a problem and return a framework of key questions drawn from public-domain military literature. Use when someone wants a structured way to think through a hard problem. An unrecognised lens uses the competition framework and lens_applied says so. commanders is accepted as a comma-separated list or all. Returns the problem, the lens, the framework, a source and a note. Analytical frameworks only, not operational recommendations; historical strategy needs contextual adaptation. Read-only."
     },
     {
       "name": "public_domain_library",
-      "description": "Get major works of military and strategic philosophy available in the public domain. Returns title, author, date, themes, and key insights for each work."
+      "description": "Catalogue of public-domain works on strategy, philosophy, leadership and history, including African and Mongol sources, with author, date and themes. Use when someone asks what to read. domain filters the catalogue; an unrecognised domain returns an empty list. Returns the works and a note that all are public domain. A curated list, not a full library. Read-only."
     }
   ]
 }
