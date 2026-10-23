@@ -25,6 +25,8 @@ from __future__ import annotations
 
 import json
 import pathlib
+from importlib.metadata import PackageNotFoundError
+from importlib.metadata import version as _pkg_version
 from typing import Annotated
 
 from fastmcp import FastMCP
@@ -32,6 +34,12 @@ from pydantic import Field
 
 # Annotations tell clients which tools are safe to auto-approve (read-only, no side effects).
 READ_ONLY = {"readOnlyHint": True, "idempotentHint": True, "openWorldHint": False}
+
+try:
+    _VERSION = _pkg_version("decision-intelligence-mcp")
+except PackageNotFoundError:  # a source tree that was never installed
+    _VERSION = "0+unknown"
+
 
 mcp = FastMCP(
     name="classical-strategy-mcp",
@@ -41,7 +49,7 @@ mcp = FastMCP(
         "Caesar\'s Commentarii, and accounts of Alexander, Hannibal, Genghis Khan, and Shaka Zulu. "
         "All content is public domain. Use for strategic analysis, decision frameworks, "
         "historical research, and cross-cultural leadership study."
-    ),
+    ), version=_VERSION,
 )
 
 _DATA = pathlib.Path(__file__).parent / "data"
