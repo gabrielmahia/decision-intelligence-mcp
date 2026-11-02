@@ -4,10 +4,10 @@ build-backend = "hatchling.build"
 
 [project]
 name = "decision-intelligence-mcp"
-version = "0.1.7"
+version = "0.1.8"
 description = "MCP server: 5,000 years of military strategy and philosophy — Napoleon, Sun Tzu, Clausewitz, Alexander, Hannibal, Genghis Khan, Shaka Zulu, Caesar. All public domain."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 license = "MIT"
 keywords = ["mcp","strategy","military","napoleon","sun-tzu","clausewitz","philosophy","history","public-domain"]
 classifiers = [
@@ -15,7 +15,6 @@ classifiers = [
     "Intended Audience :: Developers",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Programming Language :: Python :: 3.13",
