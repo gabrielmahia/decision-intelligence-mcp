@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "decision-intelligence-mcp"
-version = "0.1.8"
+version = "0.1.9"
 description = "MCP server: 5,000 years of military strategy and philosophy — Napoleon, Sun Tzu, Clausewitz, Alexander, Hannibal, Genghis Khan, Shaka Zulu, Caesar. All public domain."
 readme = "README.md"
 requires-python = ">=3.11"
@@ -25,6 +25,7 @@ dependencies = ["fastmcp>=2.0.0"]
 license-files = ["LICENSE"]
 
 [project.urls]
+Issues = "https://github.com/gabrielmahia/decision-intelligence-mcp/issues"
 Homepage = "https://github.com/gabrielmahia/decision-intelligence-mcp"
 Repository = "https://github.com/gabrielmahia/decision-intelligence-mcp"
 "MCP Servers" = "https://glama.ai/mcp/servers?query=author:gabrielmahia"
